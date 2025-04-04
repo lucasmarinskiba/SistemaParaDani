@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="[invalid url, do not cite]
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="menu.html">Inicio</a></li>
+            <li><a href="messages.html">Mensajes</a></li>
+            <li><a href="change-pass.html">Cambiar Contraseña</a></li>
+            <li><a href="admin.html">Administración</a></li>
+            <li><a href="logs.html">Registros</a></li>
+            <li><a href="#" onclick="logout()">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Bienvenido</h1>
+
+        <div class="box urgent-style">
+            <h2>Alertas Urgentes</h2>
+            <!-- Contenido de Alertas Urgentes aquí -->
+        </div>
+
+        <div class="box">
+            <h2>Tus Tareas</h2>
+            <ul id="task-list">
+                <!-- Tareas se cargarán aquí -->
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Acceso Rápido</h2>
+            <button class="btn-blue" onclick="uploadDocument()">Subir Documento</button>
+            <button class="btn-blue" onclick="newMeeting()">Nueva Reunión</button>
+            <button class="btn-blue" onclick="directMessage()">Mensaje Directo</button>
+        </div>
+
+        <div class="box urgent-style">
+            <h2>Proyectos Activos</h2>
+            <ul id="project-list"></ul>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
